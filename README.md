@@ -38,5 +38,3 @@ The test script is run as follows.
 ```bash
 jasmine ./test.js
 ```
-
-This will print **true** on valid execution of test.
