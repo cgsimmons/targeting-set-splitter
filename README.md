@@ -28,10 +28,15 @@ Type is used to select the proper validity method.
 
 ## Testing
 
-Run the test script for a simple test. If successful, **true** will print to the console.
+Testing requires jasmine installed. Installation can be done with npm. You might need to perform as sudo.
 
 ```bash
-node ./test.js
+npm install -g jasmine
+```
+The test script is run as follows.
+
+```bash
+jasmine ./test.js
 ```
 
 This will print **true** on valid execution of test.
