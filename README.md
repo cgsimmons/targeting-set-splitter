@@ -1,5 +1,4 @@
 ## Targeting Set Splitter
-By Chris Simmons
 
 Split ad sets.
 
@@ -29,7 +28,7 @@ Type is used to select the proper validity method.
 
 ## Testing
 
-Simply run the test script for a simple test. If successful, **true** will print to the console.
+Run the test script for a simple test. If successful, **true** will print to the console.
 
 ```bash
 node ./test.js
