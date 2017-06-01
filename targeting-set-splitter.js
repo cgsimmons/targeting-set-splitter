@@ -19,7 +19,7 @@ class TargetingSetSplitter {
    *   Restrictions must contain 'min', 'max', and 'type'.
    *   Type is used to select the proper validity method.
    *   Example:
-    *    t = new TargetingSetSplitter({ countries: { min: 1, max: 5, type: "array" } })
+   *    t = new TargetingSetSplitter({ countries: { min: 1, max: 5, type: "array" } });
    **/
   constructor(restrictions) {
     this.restrictions = Object.assign({}, TargetingSetSplitter.defaultRestrictions, restrictions);

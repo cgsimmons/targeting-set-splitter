@@ -18,6 +18,15 @@ t.split({
 });
 ```
 
+## Custom Restrictions
+Custom settings can be passed to the constructor like below.
+
+```javascript
+ t = new TargetingSetSplitter({ countries: { min: 1, max: 5, type: "array" } });
+```
+Restrictions must contain '**min**', '**max**', and '**type**'.
+Type is used to select the proper validity method.
+
 ## Testing
 
 Simply run the test script for a simple test. If successful, **true** will print to the console.
