@@ -18,6 +18,12 @@ const testSet3 = {
   gender: 2,
   ageRange: [13, 30],
 };
+const testSet4 = {
+  countries: ['hk', 'jp'],
+  placements: ['desktop', 'mobile', 'external'],
+  gender: 3,
+  ageRange: [13, 30],
+};
 
 const result1 = [
   {
@@ -175,6 +181,12 @@ describe('TargetSetSplitter', ()=> {
     expect(JSON.stringify(t.split(testSet2))).toEqual(JSON.stringify(result2));
   });
   it('passes gender == 2', ()=> {
-    expect(JSON.stringify(t.split(testSet2))).toEqual(JSON.stringify(Object.assign(result1, result2)));
+    let solution = (result1.concat(result2)).length;
+    expect(t.split(testSet3).length).toEqual(solution);
   });
+  it('throws error for gender == 3', ()=> {
+    // t.split(testSet4);
+    expect(()=>{t.checkInput(testSet4)}).toThrow("Set category [gender] value equals 3." + "\n"
+      + "Valid range is between 0 and 2.");
+  })
 });

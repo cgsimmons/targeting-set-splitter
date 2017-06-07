@@ -158,7 +158,7 @@ class TargetingSetSplitter {
     const max = this.restrictions[key]["max"];
     const val = set[key];
     if (val < min || val > max) {
-      throw ("Set category [" + key + "] value equals" + val + "." + "\n"
+      throw ("Set category [" + key + "] value equals " + val + "." + "\n"
         + "Valid range is between " + min + " and " + max + ".");
     }
   }
